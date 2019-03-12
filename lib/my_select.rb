@@ -2,9 +2,10 @@ def my_select(collection)
  new_collection = [];
  i = 0;
  while i < collection.length do;
-   new_collection.push yield(collection[i]);
+   if yield(collection[i]) == true;
+     new_collection.push(collection[i]);
+   end
    i += 1
-   new_collection.to_i
  end
  new_collection
 end
