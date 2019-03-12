@@ -4,6 +4,7 @@ def my_select(collection)
  while i < collection.length do;
    new_collection.push yield(collection[i]);
    i += 1
+   new_collection.to_i
  end
- new_collection.to_i
+ new_collection
 end
